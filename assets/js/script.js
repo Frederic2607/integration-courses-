@@ -21,7 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
         email: document.querySelector("#email").value,
         description: document.querySelector("#description").value,
       };
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(
+        "https://app-backend-tripadvisor.herokuapp.com/form",
+        data
+      );
       //   console.log(response);
     });
 });
