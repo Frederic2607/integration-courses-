@@ -78,6 +78,12 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
+input[type="submit"]:disabled {
+  background-color: #04aa6c;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .modal-container .form-send {
   color: red;
   font-size: 20px;
