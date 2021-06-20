@@ -54,6 +54,9 @@ header {
   position: fixed;
   z-index: 99;
 }
+.bottom-border {
+  border-bottom: solid 1px gray;
+}
 header .container {
   display: flex;
   align-items: center;

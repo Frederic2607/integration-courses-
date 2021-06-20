@@ -33,7 +33,7 @@ form {
   position: relative;
 }
 
-.modal-container p {
+.modal-container .modal-title {
   font-size: 24px;
   line-height: 20px;
   font-family: "Trip Sans Medium";
@@ -76,4 +76,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #35e1a1;
   cursor: pointer;
+}
+
+.modal-container .form-send {
+  color: red;
+  font-size: 20px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.modal-container .send-hidden {
+  display: none;
 }

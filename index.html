@@ -556,21 +556,27 @@
     <div class="modal hidden">
       <div class="modal-container">
         <div>
-          <i class="far fa-times-circle"></i>
-          <p>Formulaire de contact</p>
+          <i class="far fa-times-circle modal-cross"></i>
+          <p class="modal-title">Formulaire de contact</p>
           <form id="contact-form">
-            <input type="text" id="firstname" placeholder="Prénom" />
-            <input type="text" id="lastname" placeholder="Nom" />
-            <input type="email" id="email" placeholder="Email" />
+            <input type="text" id="firstname" placeholder="Prénom" required />
+            <input type="text" id="lastname" placeholder="Nom" required />
+            <input type="email" id="email" placeholder="Email" required />
             <textarea
               name="description"
               id="description"
               cols="50"
               rows="5"
               placeholder="Écrivez ici votre message..."
+              required
             ></textarea>
-            <input type="submit" value="Envoyer le formulaire" />
+            <input
+              type="submit"
+              id="submit-btn"
+              value="Envoyer le formulaire"
+            />
           </form>
+          <p class="form-send send-hidden">Le formulaire a été transmis</p>
         </div>
       </div>
     </div>
