@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Page chargée");
-
   // Afficher ou fermer la MODAL
   document.querySelector("#btn-signup").addEventListener("click", () => {
     document.querySelector(".modal").classList.toggle("hidden");
@@ -25,6 +23,5 @@ document.addEventListener("DOMContentLoaded", () => {
         "https://app-backend-tripadvisor.herokuapp.com/form",
         data
       );
-      //   console.log(response);
     });
 });
