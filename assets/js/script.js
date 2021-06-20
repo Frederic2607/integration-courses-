@@ -46,8 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         description: document.querySelector("#description").value,
       };
       const response = await axios.post(
-        // "https://app-backend-tripadvisor.herokuapp.com/form",
-        "http://localhost:3000/form",
+        "https://app-backend-tripadvisor.herokuapp.com/form",
         data
       );
       if (response.status === 200) {
