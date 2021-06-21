@@ -559,14 +559,32 @@
           <i class="far fa-times-circle modal-cross"></i>
           <p class="modal-title">Formulaire de contact</p>
           <form id="contact-form">
-            <input type="text" id="firstname" placeholder="Prénom" required />
-            <input type="text" id="lastname" placeholder="Nom" required />
-            <input type="email" id="email" placeholder="Email" required />
+            <input
+              type="text"
+              id="firstname"
+              placeholder="Prénom"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="text"
+              id="lastname"
+              placeholder="Nom"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              autocomplete="off"
+              required
+            />
             <textarea
               name="description"
               id="description"
               cols="50"
-              rows="5"
+              rows="3"
               placeholder="Écrivez ici votre message..."
               required
             ></textarea>
@@ -576,7 +594,7 @@
               value="Envoyer le formulaire"
             />
           </form>
-          <p class="form-send send-hidden">Le formulaire a été transmis</p>
+          <p class="form-send send-hidden">Sent !</p>
         </div>
       </div>
     </div>
